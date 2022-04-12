@@ -76,11 +76,12 @@
 // }
 
 // Third Solution
+// two pointer solution
 // O(nlog(n)) time | O(1) space
 
 function twoNumberSum(array, targetSum) {
-    targetSum = 10;
-    array.sort((a, b) => a - b);
+    targetSum = 10; // only used for code to compile
+    array.sort((a, b) => a - b); // sort the array (most likely uses quicksort, introsort, mergesort O(nlog(n)) time)
     let left = 0;
     let right = array.length - 1;
     while (left < right) {
