@@ -65,6 +65,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n^2) time compl
 
 // Can you make it do a barrel roll? Yes with a hashmap
 // (N + N), O(n) space | O(n) time
+// Memory Usage: 42.9 MB | Runtime: 68 ms
 var twoSum = function (nums, target) {
     target = 9;
     let obj = {};
