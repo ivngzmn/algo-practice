@@ -73,15 +73,18 @@ var isAnagram = function (s, t) {
   const tCount = {};
   // if string length don't match return false
   if (s.length !== t.length) return false;
+  // obtain all letter counts and place in arr
   for (let i = 0; i < s.length; i++) {
     if (!sCount[s[i]]) sCount[s[i]] = 0;
     if (!tCount[t[i]]) tCount[t[i]] = 0;
     sCount[s[i]]++;
     tCount[t[i]]++;
   }
+  // check if letter counts match each other. If not return false
   for (let char in sCount) {
     if (sCount[char] !== tCount[char]) return false;
   }
+  // else we return true
   return true;
 };
 
